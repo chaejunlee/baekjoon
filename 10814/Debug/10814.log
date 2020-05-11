@@ -1,0 +1,3 @@
+﻿  10814.cpp
+C:\workspace\baekjoon\10814\10814.cpp(26,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  10814.vcxproj -> C:\workspace\baekjoon\Debug\10814.exe

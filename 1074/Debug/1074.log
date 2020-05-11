@@ -1,0 +1,5 @@
+﻿  1074.cpp
+C:\workspace\baekjoon\1074\1074.cpp(23,22): warning C4244: '+=': 'double'에서 'long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\workspace\baekjoon\1074\1074.cpp(28,26): warning C4244: '+=': 'double'에서 'long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\workspace\baekjoon\1074\1074.cpp(33,26): warning C4244: '+=': 'double'에서 'long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  1074.vcxproj -> C:\workspace\baekjoon\Debug\1074.exe
