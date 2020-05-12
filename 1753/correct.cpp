@@ -10,12 +10,12 @@ void solve() {
     for (int i = 1; i <= V; i++) {
         dist[i] = MAX;
     }
-    priority_queue<pair<int,int>> PQ;
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> PQ;
     PQ.push(make_pair(0, K));
     dist[K] = 0;
     
     while (!PQ.empty()) {
-        int cost = -PQ.top().first;
+        int cost = PQ.top().first;
         int curr = PQ.top().second;
         PQ.pop();
 
@@ -25,7 +25,7 @@ void solve() {
 
             if (dist[next] > cost + nCost) {
                 dist[next] = cost + nCost;
-                PQ.push(make_pair(-dist[next], next));
+                PQ.push(make_pair(dist[next], next));
             }
         }
     }
