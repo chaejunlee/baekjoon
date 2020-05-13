@@ -6,27 +6,25 @@ using namespace std;
 
 int N = 0, M = 0, K = 0;
 string s, t;
+int dp[1001][1001] = {0};
 
-int solve(int i, int j) {
-    int cnt = 0;
-    if (s[i] == t[j]) {
-        cnt = solve(i + 1, j + 1);
-        return cnt;
-    }
-    for (int k = i; k < t.length(); k++) {
-        if (s[i] == t[k]) {
-            cnt = solve(i + 1, k);
+int solve() {
+    N = s.length();
+    M = t.length();
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= M; j++) {
+            int temp = dp[i - 1][j - 1];
+            if (s[i - 1] == t[j - 1])
+                temp++;
+            dp[i][j] = max(max(dp[i - 1][j], dp[i][j - 1]), temp);
         }
     }
-    cnt = solve(i + 1, j);
+    return dp[N][M];
 }
 
 int main(void) {
-    int cnt = 0;
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cin >> s >> t;
-    for (int i = 0; i < s.length(); i++) {
-        cnt = max(solve(i, 0), cnt);
-    }
+    cout << solve();
 }
