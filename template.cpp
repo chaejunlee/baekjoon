@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #define pi pair<int, int>
+#define vpi vector<pair<int, int>>
 #define ll long long
 #define PQ priority_queue
 using namespace std;
