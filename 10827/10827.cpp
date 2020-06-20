@@ -21,14 +21,20 @@ bool bigger_second(pi a, pi b) {
 
 int t = 0, N = 0, M = 0, K = 0;
 
-void solve() {
+double solve(double a, int b) {
+    if (b == 2)
+        return a * a;
+    if (b == 1)
+        return a;
+    return solve(a, b / 2) * solve(a, b - (b / 2));
 }
 
 int main(void) {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    double a;
+    int b;
+    cout.precision(9);
+    cin >> a >> b;
+    cout << solve(a, b);
 }
