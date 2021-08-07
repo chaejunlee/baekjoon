@@ -3,7 +3,9 @@
 #define vpi vector<pair<int, int>>
 #define ll long long
 #define PQ priority_queue
+
 using namespace std;
+
 bool smaller_second(pi a, pi b) {
     if (a.second == b.second)
         return a.first < b.first;
@@ -21,7 +23,8 @@ bool bigger_second(pi a, pi b) {
 
 int t = 0, N = 0, M = 0, K = 0;
 
-void solve() {
+int solve() {
+	
 }
 
 int main(void) {
@@ -31,4 +34,6 @@ int main(void) {
     while (t--) {
         solve();
     }
+	
+	return 0;
 }
