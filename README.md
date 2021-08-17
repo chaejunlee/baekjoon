@@ -8,8 +8,6 @@
 - [2449 전구 P5](https://www.acmicpc.net/problem/2449)
 - [2618 경찰차 P5](https://www.acmicpc.net/problem/2618)
 - [2718 타일 채우기 G1](https://www.acmicpc.net/problem/2718)
-- 
-
 
 ### Needs Review
 - 1080
