@@ -9,14 +9,8 @@ void solve(int n, int m) {
     queue<int> q;
     q.push(n);
     
-    if (n == m) {
-        CNT = 0;
-        RET = 1;
-        return;
-    }
-    
     int cnt = 0;
-    while (CNT == 0) {
+    while (RET == 0) {
         queue<int> p = q;
         q = queue<int>();
         while (!p.empty()) {
@@ -25,22 +19,14 @@ void solve(int n, int m) {
             
             visited[k] = 1;
             
+            if (k == m) {
+                CNT = cnt;
+                RET++;
+            }
+            
             int a = k - 1;
             int b = k + 1;
             int c = k * 2;
-            
-            if (a == m) {
-                CNT = cnt + 1;
-                RET++;
-            }
-            if (b == m) {
-                CNT = cnt + 1;
-                RET++;
-            }
-            if (c == m) {
-                CNT = cnt + 1;
-                RET++;
-            }
             
             if (a >= 0 && !visited[a]) q.push(a);
             if (b <= 100000 && !visited[b]) q.push(b);
