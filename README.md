@@ -18,6 +18,8 @@
 
 휴,, 공부해야되는데 하기 싫다..ㅎ
 
+공부하기 싫어ㅓㅓ
+
 <details>
 <summary>Archives</summary>
 <br>
