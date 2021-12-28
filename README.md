@@ -8,6 +8,8 @@
 
 전역 2주 남았다!
 
+3차 백신 맞았다! 별로 안 아픈 듯? 빨리,, 시간이 갔으면 좋겠다,,
+
 <details>
 <summary>Archives</summary>
 <br>
