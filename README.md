@@ -14,6 +14,8 @@
 
 아 너무 힘들어~
 
+코딩 책 여러 권 샀다. 재미있겠다! 빨리 전역하고 싶음!!
+
 <details>
 <summary>Archives</summary>
 <br>
